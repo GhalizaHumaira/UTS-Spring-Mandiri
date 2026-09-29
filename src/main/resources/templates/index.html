@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>UAS Spring Boot - Menu Utama</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; background-color: #f4f4f9; text-align: center; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #333; margin-bottom: 20px; }
+        .menu-btn {
+            display: block;
+            width: 80%;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        .btn-travolta { background-color: #28a745; }
+        .btn-travolta:hover { background-color: #218838; }
+        .btn-kuadrat { background-color: #007bff; }
+        .btn-kuadrat:hover { background-color: #0069d9; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Aplikasi UAS Spring Boot</h1>
+    <p>Pilih modul aplikasi di bawah ini:</p>
+
+    <!-- Tombol Menuju Soal 2 -->
+    <a href="/travolta" class="menu-btn btn-travolta">Soal 2: Kalkulator John Travolta</a>
+
+    <!-- Tombol Menuju Soal 3 -->
+    <a href="/kuadrat" class="menu-btn btn-kuadrat">Soal 3: Persamaan Kuadrat</a>
+</div>
+</body>
+</html>

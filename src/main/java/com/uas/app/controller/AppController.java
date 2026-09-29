@@ -19,6 +19,14 @@ public class AppController {
     private KuadratService kuadratService;
 
     // ==========================================
+    // HALAMAN UTAMA / MENU GABUNGAN (http://localhost:8080)
+    // ==========================================
+    @GetMapping("/")
+    public String index() {
+        return "index";
+    }
+
+    // ==========================================
     // SOAL 2: JOHN TRAVOLTA
     // ==========================================
 
@@ -29,7 +37,7 @@ public class AppController {
         return "travolta";
     }
 
-    // Memproses Input dari Form (POST) -> Solusi Error 405
+    // Memproses Input dari Form (POST)
     @PostMapping("/travolta")
     public String processTravoltaForm(@RequestParam("jamKerja") double jamKerja,
                                       @RequestParam(value = "pengeluaran", defaultValue = "600000") double pengeluaran,
